@@ -15,6 +15,12 @@ theme:
 # Estructura de navegación lateral
 nav:
   - Inicio: index.md
+  - 1. Instalación y configuración de Git: 01-git.md
+  - 2. GitHub CLI: 02-github-cli.md
+  - 3. Instalación de Herd y PHP 8.4: 03-herd.md
+  - 4. Repositorio misitio: 04-misitio.md
+  - 5. Herd y HTTPS: 05-herd-https.md
+  - 6. Read the Docs: 06-readthedocs.md
 
 # Opciones adicionales
 markdown_extensions:
