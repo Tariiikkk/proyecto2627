@@ -21,6 +21,8 @@ nav:
   - 4. Repositorio misitio: 04-misitio.md
   - 5. Herd y HTTPS: 05-herd-https.md
   - 6. Read the Docs: 06-readthedocs.md
+  - 7. Cálculo del sueldo: 07-calculo-sueldo.md
+
 
 # Opciones adicionales
 markdown_extensions:
