@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Alumno DAW - IES Los Albares" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>4. Repositorio misitio - Proyecto Intermodular</title>
+    <title>7. Cálculo del sueldo - Proyecto Intermodular</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var properdocs_page_name = "4. Repositorio misitio";
-        var properdocs_page_input_path = "04-misitio.md";
+        var properdocs_page_name = "7. C\u00e1lculo del sueldo";
+        var properdocs_page_input_path = "07-calculo-sueldo.md";
         var properdocs_page_url = null;
       </script>
     
@@ -59,14 +59,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../03-herd/">3. Instalación de Herd y PHP 8.4</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">4. Repositorio misitio</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#creacion-del-repositorio">Creación del repositorio</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#resultado">Resultado</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04-misitio/">4. Repositorio misitio</a>
                 </li>
               </ul>
               <ul>
@@ -77,8 +71,30 @@
                 <li class="toctree-l1"><a class="reference internal" href="../06-readthedocs/">6. Read the Docs</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../07-calculo-sueldo/">7. Cálculo del sueldo</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">7. Cálculo del sueldo</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#71-ut02_p02aphp">7.1. UT02_P02A.php</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#captura-del-codigo">Captura del código</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#72-ut02_p02bphp">7.2. UT02_P02B.php</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#captura-del-codigo_1">Captura del código</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#73-funcionamiento">7.3. Funcionamiento</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ejemplo">Ejemplo</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#74-conclusion">7.4. Conclusión</a>
+    </li>
+    </ul>
                 </li>
               </ul>
       </div>
@@ -95,7 +111,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">4. Repositorio misitio</li>
+      <li class="breadcrumb-item active">7. Cálculo del sueldo</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -104,25 +120,67 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <hr />
-<h1 id="4-repositorio-misitio">4. Repositorio misitio</h1>
-<p>En este apartado se crea y configura el repositorio correspondiente al sitio web del proyecto.</p>
-<p>El repositorio permite almacenar el código del proyecto y realizar un seguimiento de los cambios mediante Git.</p>
-<h2 id="creacion-del-repositorio">Creación del repositorio</h2>
-<p>Se crea un repositorio denominado <code>misitio</code> en GitHub.</p>
-<p>Una vez creado, se configura el repositorio local para trabajar con el repositorio remoto.</p>
-<p>Para comprobar el estado del repositorio se utiliza:</p>
-<p>git status</p>
-<h2 id="resultado">Resultado</h2>
-<p>La siguiente captura muestra el repositorio <code>misitio</code> creado y los archivos
-del proyecto disponibles en GitHub:</p>
-<p><img alt="Repositorio misitio" src="../images/04-misitio.png" /></p>
+                <h1 id="7-calculo-del-sueldo">7. Cálculo del sueldo</h1>
+<p>En esta práctica he realizado un programa en PHP para calcular el sueldo
+final de un trabajador dependiendo del puesto que ocupa.</p>
+<p>La práctica está formada por dos archivos:</p>
+<ul>
+<li><code>UT02_P02A.php</code>: formulario para introducir los datos.</li>
+<li><code>UT02_P02B.php</code>: realiza los cálculos y muestra el resultado.</li>
+</ul>
+<hr />
+<h2 id="71-ut02_p02aphp">7.1. UT02_P02A.php</h2>
+<p>En este archivo he creado un formulario para introducir el sueldo del
+trabajador y seleccionar su puesto.</p>
+<p>El formulario tiene un campo para introducir el sueldo y un menú con tres
+puestos: Base, Directivo y Alto cargo.</p>
+<p>También he añadido un botón para enviar los datos al archivo
+<code>UT02_P02B.php</code>.</p>
+<h3 id="captura-del-codigo">Captura del código</h3>
+<p><img alt="Código de UT02_P02A.php" src="../images/07-ut02-p02a.png" /></p>
+<hr />
+<h2 id="72-ut02_p02bphp">7.2. UT02_P02B.php</h2>
+<p>En este archivo recibo los datos enviados desde el formulario.</p>
+<p>Primero recojo el sueldo y el puesto seleccionado. Después, mediante
+condiciones, asigno un porcentaje dependiendo del puesto:</p>
+<ul>
+<li>Base: 10%</li>
+<li>Directivo: 15%</li>
+<li>Alto cargo: 20%</li>
+</ul>
+<p>Después calculo el complemento y lo sumo al sueldo base para obtener
+el sueldo final.</p>
+<p>Finalmente, muestro el sueldo base, el porcentaje aplicado y el sueldo
+final.</p>
+<h3 id="captura-del-codigo_1">Captura del código</h3>
+<p><img alt="Código de UT02_P02B.php" src="../images/07-ut02-p02b.png" /></p>
+<hr />
+<h2 id="73-funcionamiento">7.3. Funcionamiento</h2>
+<p>El funcionamiento de la práctica es el siguiente:</p>
+<ol>
+<li>Introduzco el sueldo.</li>
+<li>Selecciono el puesto.</li>
+<li>Pulso el botón <strong>Calcular</strong>.</li>
+<li>Se envían los datos al segundo archivo.</li>
+<li>PHP calcula el complemento.</li>
+<li>Se muestra el sueldo final.</li>
+</ol>
+<h3 id="ejemplo">Ejemplo</h3>
+<p>Si introduzco un sueldo de 1500 € y selecciono <strong>Directivo</strong>, se aplica
+un 15% de complemento.</p>
+<p>El complemento es de 225 € y el sueldo final es de 1725 €.</p>
+<p><img alt="Ejemplo1" src="../images/ejemplo1.png" /> <br>
+<img alt="Ejemplo2" src="../images/ejemplo2.png" /></p>
+<hr />
+<h2 id="74-conclusion">7.4. Conclusión</h2>
+<p>Con esta práctica he aprendido a utilizar formularios HTML junto con PHP,
+recibir datos, utilizar condiciones y realizar operaciones matemáticas
+para obtener un resultado.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../03-herd/" class="btn btn-neutral float-left" title="3. Instalación de Herd y PHP 8.4"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../05-herd-https/" class="btn btn-neutral float-right" title="5. Herd y HTTPS">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../06-readthedocs/" class="btn btn-neutral float-left" title="6. Read the Docs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -145,10 +203,8 @@ del proyecto disponibles en GitHub:</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../03-herd/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../06-readthedocs/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../05-herd-https/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
